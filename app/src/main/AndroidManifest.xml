@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDMExperimentos2T">
         <activity
+            android:name=".demo01"
+            android:exported="false"
+            android:label="@string/title_activity_demo01"
+            android:theme="@style/Theme.PMDMExperimentos2T.NoActionBar" />
+        <activity
+            android:name=".demo02"
+            android:exported="false"
+            android:label="@string/title_activity_demo01"
+            android:theme="@style/Theme.PMDMExperimentos2T.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu01_op01"
+        android:title="Demo 1"
+        app:showAsAction="collapseActionView"
+        />
+    <item
+        android:id="@+id/menu01_op02"
+        android:title="Opcion 2"
+        android:icon="@android:drawable/ic_media_play"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/menu01_op03"
+        android:title="Opcion 3"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu01_op04"
+        android:title="Opcion 4"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/menu01_op05"
+        android:title="Opcion 5"
+        >
+        <menu>
+            <item
+                android:id="@+id/menu01_op06"
+                android:title="Opcion 6"
+                android:icon="@android:drawable/ic_dialog_alert"
+                />
+            <item
+                android:id="@+id/menu01_op07"
+                android:title="Opcion 7"
+                android:icon="@android:drawable/ic_menu_delete"
+                />
+        </menu>
+    </item>
+    <!--
+        app:showAsAction permite especificar cuándo y cómo deberá aparecer en la ActionBar:
+            ifRoom: si hay espacio; never, always...
+    -->
+</menu>
