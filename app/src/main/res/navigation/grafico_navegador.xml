@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegador"
+    app:startDestination="@id/pedazoFragment"
+    >
+
+    <fragment
+        android:id="@+id/trozoFragment"
+        android:name="ar.pmdm.TrozoFragment"
+        android:label="fragment_trozo"
+        tools:layout="@layout/fragment_trozo" >
+        <action
+            android:id="@+id/action_trozoFragment_to_pedazoFragment2"
+            app:destination="@id/pedazoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedazoFragment"
+        android:name="ar.pmdm.PedazoFragment"
+        android:label="fragment_pedazo"
+        tools:layout="@layout/fragment_pedazo" >
+        <action
+            android:id="@+id/action_pedazoFragment_to_trozoFragment2"
+            app:destination="@id/trozoFragment" />
+    </fragment>
+</navigation>

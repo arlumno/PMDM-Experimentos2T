@@ -23,8 +23,8 @@
         app:showAsAction="withText"
         />
     <item
-        android:id="@+id/menu01_op05"
-        android:title="Opcion 5"
+        android:id="@+id/menu01_f1"
+        android:title="F1"
         >
         <menu>
             <item
