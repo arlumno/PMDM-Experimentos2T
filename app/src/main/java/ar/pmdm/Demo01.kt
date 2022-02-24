@@ -2,6 +2,8 @@ package ar.pmdm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.navigation.fragment.NavHostFragment
 import ar.pmdm.databinding.ActivityDemo01Binding
 
 class Demo01 : AppCompatActivity() {
@@ -16,5 +18,11 @@ class Demo01 : AppCompatActivity() {
 
         supportActionBar!!.title = "Demo 01"
 
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.elFrame) as NavHostFragment
+//        val navController = navHostFragment.navController
+
+        binding.btDemoClick.setOnClickListener(){
+            Toast.makeText(this,"Holita",Toast.LENGTH_SHORT).show();
+        }
     }
 }

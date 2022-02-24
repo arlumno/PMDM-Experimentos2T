@@ -12,7 +12,7 @@
         android:label="fragment_trozo"
         tools:layout="@layout/fragment_trozo" >
         <action
-            android:id="@+id/action_trozoFragment_to_pedazoFragment2"
+            android:id="@+id/action_trozoFragment_to_pedazoFragment"
             app:destination="@id/pedazoFragment" />
     </fragment>
     <fragment
@@ -21,7 +21,7 @@
         android:label="fragment_pedazo"
         tools:layout="@layout/fragment_pedazo" >
         <action
-            android:id="@+id/action_pedazoFragment_to_trozoFragment2"
+            android:id="@+id/action_pedazoFragment_to_trozoFragment"
             app:destination="@id/trozoFragment" />
     </fragment>
 </navigation>

@@ -9,9 +9,13 @@
         <entry key="..\:/ArGit/PMDM-Experimentos2T/app/src/main/res/layout/fragment_pedazo.xml" value="0.36666666666666664" />
         <entry key="..\:/ArGit/PMDM-Experimentos2T/app/src/main/res/layout/fragment_trozo.xml" value="0.36666666666666664" />
         <entry key="..\:/ArGit/PMDM-Experimentos2T/app/src/main/res/menu/menu01.xml" value="0.21" />
+        <entry key="..\:/Users/Ar/Documents/proyectos git/PMDM-Experimentos2T/app/src/main/res/layout/activity_demo01.xml" value="0.3171875" />
+        <entry key="..\:/Users/Ar/Documents/proyectos git/PMDM-Experimentos2T/app/src/main/res/layout/activity_main.xml" value="0.28351449275362317" />
+        <entry key="..\:/Users/Ar/Documents/proyectos git/PMDM-Experimentos2T/app/src/main/res/menu/menu01.xml" value="0.3171875" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

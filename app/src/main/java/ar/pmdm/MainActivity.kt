@@ -13,6 +13,7 @@ import ar.pmdm.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+//    private lateinit var navHostFragment: NavHostFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         binding.btTest.setOnClickListener{
-            navController.navigate(R.id.action_trozoFragment_to_pedazoFragment2)
+            navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)
         }
 
     }
@@ -40,15 +41,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.elFrame) as NavHostFragment
+        val navController = navHostFragment.navController
+
         when (item.itemId) {
             R.id.menu01_op01 -> {
-                startActivity(Intent(this, Demo01::class.java))
+                Toast.makeText(this, "Pulsado op1", Toast.LENGTH_SHORT).show()
             }
             R.id.menu01_op02 -> {
-                Toast.makeText(this, "Pulsado op2", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, Demo01::class.java))
             }
             R.id.menu01_f1 -> {
-             //navController.navigate(R.id.action_trozoFragment_to_pedazoFragment2)
+                navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)
             }
             else -> Toast.makeText(this, "Opción: " + item.title, Toast.LENGTH_SHORT).show()
         }
