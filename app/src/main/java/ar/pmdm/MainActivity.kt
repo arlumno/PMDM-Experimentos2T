@@ -13,7 +13,6 @@ import ar.pmdm.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    private lateinit var navHostFragment: NavHostFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +27,11 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         binding.btTest.setOnClickListener{
-            navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)
+            when(navController.currentDestination?.id) {
+                R.id.trozoFragment -> navController.navigate(R.id.action_trozoFragment_to_pedazoFragment)
+                R.id.pedazoFragment -> navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)
+                else -> showSnackBar(it);
+            }
         }
 
     }
@@ -46,10 +49,13 @@ class MainActivity : AppCompatActivity() {
 
         when (item.itemId) {
             R.id.menu01_op01 -> {
-                Toast.makeText(this, "Pulsado op1", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, Demo01::class.java))
             }
             R.id.menu01_op02 -> {
-                startActivity(Intent(this, Demo01::class.java))
+                Toast.makeText(this, "Pulsado op2", Toast.LENGTH_SHORT).show()
+            }
+            R.id.menu01_op03 -> {
+                startActivity(Intent(this, demo_drawer::class.java))
             }
             R.id.menu01_f1 -> {
                 navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)

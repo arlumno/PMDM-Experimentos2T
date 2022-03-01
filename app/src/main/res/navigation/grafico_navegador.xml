@@ -14,6 +14,8 @@
         <action
             android:id="@+id/action_trozoFragment_to_pedazoFragment"
             app:destination="@id/pedazoFragment" />
+        <argument android:name="el_paquete" app:argType="string" android:defaultValue="Cosas"/>
+
     </fragment>
     <fragment
         android:id="@+id/pedazoFragment"

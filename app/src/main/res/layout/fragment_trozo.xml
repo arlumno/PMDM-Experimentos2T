@@ -18,10 +18,19 @@
         android:text="Trozo" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imEstrellaTrozo"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:src="@android:drawable/star_big_on" />
+
+    <TextView
+        android:id="@+id/etConsigna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="95dp"
+        android:textSize="20dp"
+        android:text="----" />
 
 </FrameLayout>

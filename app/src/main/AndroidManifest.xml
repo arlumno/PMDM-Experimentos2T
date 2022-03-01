@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDMExperimentos2T">
         <activity
+            android:name=".demo_drawer"
+            android:exported="false"
+            android:label="@string/title_activity_demo_drawer"
+            android:theme="@style/Theme.PMDMExperimentos2T.NoActionBar" />
+        <activity
             android:name=".Demo01"
             android:exported="false"
             android:label="@string/title_activity_demo01"

@@ -23,5 +23,14 @@
         android:layout_height="95dp"
         android:layout_gravity="center"
         android:src="@android:drawable/btn_star_big_off" />
-
+    <TextView
+        android:id="@+id/tvPaquete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        android:text="envioAlgo" />
 </FrameLayout>

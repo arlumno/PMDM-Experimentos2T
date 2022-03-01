@@ -23,6 +23,7 @@ class Demo01 : AppCompatActivity() {
 
         binding.btDemoClick.setOnClickListener(){
             Toast.makeText(this,"Holita",Toast.LENGTH_SHORT).show();
+            title = "cambiado el titulo"
         }
     }
 }

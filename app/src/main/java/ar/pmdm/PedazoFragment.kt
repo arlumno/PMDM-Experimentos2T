@@ -30,14 +30,14 @@ class PedazoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pedazo, container, false)
+        _binding = FragmentPedazoBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.imEstrella.setOnClickListener(){
-            findNavController().navigate(dire)
+            findNavController().navigate(PedazoFragmentDirections.actionPedazoFragmentToTrozoFragment(binding.tvPaquete.text.toString()))
         }
     }
 
