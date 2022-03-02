@@ -13,12 +13,14 @@
     <include android:id="@+id/contenido" layout="@layout/activity_demo01" />
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/demo_drawer"
+        android:id="@+id/demo_drawer_menu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/menu01"
-        android:layout_gravity = "end"
+        android:layout_gravity = "start"
         android:fitsSystemWindows="true"
+        app:headerLayout="@layout/cabecera_drawer"
         />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

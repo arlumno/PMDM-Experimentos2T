@@ -8,6 +8,7 @@ import ar.pmdm.databinding.ActivityDemo01Binding
 
 class Demo01 : AppCompatActivity() {
     private lateinit var binding: ActivityDemo01Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDemo01Binding.inflate(layoutInflater)
