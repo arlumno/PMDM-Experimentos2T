@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -15,7 +16,10 @@ import ar.pmdm.databinding.ActivityDemoDrawerBinding
 class demo_drawer : AppCompatActivity() {
 
     private lateinit var binding:  ActivityDemoDrawerBinding
+
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var navController: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,13 +40,16 @@ class demo_drawer : AppCompatActivity() {
 
         /* asingnar navegador a menu drawer*/
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.contenedorFragmentosView) as NavHostFragment
-        val navController = navHostFragment.navController
+        navController = navHostFragment.navController
 //        val navController = findNavController(R.id.contenedorFragmentosView)
-//        appBarConfiguration = AppBarConfiguration(setOf(R.id.menu01_op06,R.id.menu01_op07),binding.root)
-//        appBarConfiguration = AppBarConfiguration(navController.graph)
-//        setupActionBarWithNavController(navController,appBarConfiguration)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.trozoFragment,R.id.pedazoFragment),binding.root)
+        //appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController,appBarConfiguration)
+        binding.demoDrawerMenu.setupWithNavController(navController)
 
-        //binding.demoDrawerMenu.setupWithNavController(navController,appBarConfiguration)
+
+
+
 
         binding.demoDrawerMenu.setNavigationItemSelectedListener {
             when (it.itemId){

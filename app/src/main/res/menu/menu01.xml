@@ -19,7 +19,7 @@
         />
     <item
         android:id="@+id/menu01_op04"
-        android:title="Opcion 4"
+        android:title="bottomnera"
         app:showAsAction="withText"
         />
     <item
@@ -37,6 +37,15 @@
                 android:title="Opcion 7"
                 android:icon="@android:drawable/ic_menu_delete"
                 />
+            <item
+                android:id="@+id/pedazoFragment"
+                android:icon="@android:drawable/alert_dark_frame"
+                android:title="pedazo" />
+
+            <item
+                android:id="@+id/trozoFragment"
+                android:icon="@android:drawable/btn_minus"
+                android:title="trozo" />
         </menu>
     </item>
     <!--

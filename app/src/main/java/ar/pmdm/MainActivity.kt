@@ -57,6 +57,9 @@ class MainActivity : AppCompatActivity() {
             R.id.menu01_op03 -> {
                 startActivity(Intent(this, demo_drawer::class.java))
             }
+            R.id.menu01_op04 -> {
+                startActivity(Intent(this, bottom_navegador::class.java))
+            }
             R.id.menu01_f1 -> {
                 navController.navigate(R.id.action_pedazoFragment_to_trozoFragment)
             }

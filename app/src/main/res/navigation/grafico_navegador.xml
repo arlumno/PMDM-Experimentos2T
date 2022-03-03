@@ -25,5 +25,8 @@
         <action
             android:id="@+id/action_pedazoFragment_to_trozoFragment"
             app:destination="@id/trozoFragment" />
+        <action
+            android:id="@+id/action_pedazoFragment_self"
+            app:destination="@id/pedazoFragment" />
     </fragment>
 </navigation>
