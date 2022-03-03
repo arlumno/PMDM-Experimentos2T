@@ -47,8 +47,11 @@ class demo_drawer : AppCompatActivity() {
         setupActionBarWithNavController(navController,appBarConfiguration)
         binding.demoDrawerMenu.setupWithNavController(navController)
 
+        binding.contenido.btDemoClick.setOnClickListener(){
 
-
+//            showToast("Fragment actual: " + navController.currentDestination?.id.toString())
+            showToast("Fragment actual: " + navController.currentDestination?.displayName.toString() + "(id: " + navController.currentDestination?.id.toString()+")")
+        }
 
 
         binding.demoDrawerMenu.setNavigationItemSelectedListener {

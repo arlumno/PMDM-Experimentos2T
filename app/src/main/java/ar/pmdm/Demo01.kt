@@ -2,6 +2,7 @@ package ar.pmdm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.navigation.fragment.NavHostFragment
 import ar.pmdm.databinding.ActivityDemo01Binding
@@ -19,6 +20,7 @@ class Demo01 : AppCompatActivity() {
 
         supportActionBar!!.title = "Demo 01"
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 //        val navHostFragment = supportFragmentManager.findFragmentById(R.id.elFrame) as NavHostFragment
 //        val navController = navHostFragment.navController
 
@@ -26,5 +28,10 @@ class Demo01 : AppCompatActivity() {
             Toast.makeText(this,"Holita",Toast.LENGTH_SHORT).show();
             title = "cambiado el titulo"
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        showToast(item.title.toString())
+        return super.onOptionsItemSelected(item)
     }
 }

@@ -11,7 +11,10 @@
         android:theme="@style/Theme.PMDMExperimentos2T">
         <activity
             android:name=".bottom_navegador"
-            android:exported="false" />
+            android:parentActivityName=".demo_drawer"
+            android:exported="false"
+            android:theme="@style/Theme.PMDMExperimentos2T"
+            />
         <activity
             android:name=".demo_drawer"
             android:exported="false"
